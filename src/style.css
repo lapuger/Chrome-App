@@ -22,7 +22,7 @@ html {
 }
 body {  
     min-height: 100vh;
-    background: url("https://github.com/lapuger/Chrome-App/blob/master/src/images/dkbg01.jpg") no-repeat;
+    background: url("/images/dkbg01.jpg") no-repeat;
     background-size: cover;
     font-family: 'poppins', 'Nanum Barun Gothic', sans-serif;
     font-size: 1.6rem; /* reset 10*1.6px, to make sure you do not get any 10px around */
