@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+    font-size: 62.5%; /* 62.5% of the base size of 16px = 10px */
+    height:100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+}
+.clearfix::before, .clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.hidden {
+    display: none;
+}
+body {  
+    min-height: 100vh;
+    background: url("file:///C:/Users/admin/Documents/STUDY/src/images/dkbg01.jpg") no-repeat;
+    background-size: cover;
+    font-family: 'poppins', 'Nanum Barun Gothic', sans-serif;
+    font-size: 1.6rem; /* reset 10*1.6px, to make sure you do not get any 10px around */
+    text-align: center;
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src:format("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+    unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
+
+}
+@font-face {
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 300;
+    src:format("https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css");
+
+    unicode-range:U+AC00-U+D7A3;
+
+}
+#wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+#wrapper #dp-center {    
+    position: absolute;
+    left:50%;
+    top:30rem;
+    margin-left:-25rem;
+    
+}
+#wrapper #dp-center .clock {    
+    opacity: 0.6;     
+    width: 58rem;
+    position: relative;    
+}
+#wrapper #dp-center .clock h2 {
+    font-size: 13rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+}
+#wrapper #dp-center .clock .clock-setting { 
+    position:absolute;
+    right:0;
+    bottom:7rem;
+}
+/*
+#wrapper #dp-center .clock .clock-setting:hover {
+    background-image: url("/src/images/clock_setting_hover.svg");
+    color:tomato;
+}*/
+
+#wrapper #dp-center .clock:hover {
+    cursor: pointer;
+}
+
+#wrapper #dp-center .greetings {
+    margin-left: -7rem;    
+}
+#wrapper #dp-center .greetings h1 {
+    margin-top: 5rem;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+#wrapper .dock {
+    position: absolute;
+    bottom:2.5rem;
+    left:50%;
+    margin-left:-10.5rem;
+    background: rgba(0,0,0,0.5);
+    width: 21rem;
+    line-height: 6rem;
+    border-radius: 1.4rem;
+}
+#wrapper .dock img {
+    float: left;
+    padding: 1rem 0.5rem;
+    opacity: 0.6;
+}
+#wrapper .dock img:first-child {
+    margin-left: 0.5rem;
+}
