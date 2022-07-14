@@ -40,7 +40,7 @@ html {
 
 body {
     min-height: 100vh;
-    background: url("/images/Tatooin_BG.png") no-repeat;
+    background: url("images/Tatooin_BG.png") no-repeat;
     background-size: cover;
     font-family: 'poppins', 'Nanum Barun Gothic', sans-serif;
     font-size: 1.6rem;
