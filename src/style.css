@@ -2,111 +2,211 @@
 /* CSS Document */
 
 html {
-    font-size: 62.5%; /* 62.5% of the base size of 16px = 10px */
-    height:100%;
+    font-size: 62.5%;
+    /* 62.5% of the base size of 16px = 10px */
+    height: 100%;
     width: 100%;
 }
 
 * {
     margin: 0;
     padding: 0;
-    list-style: none;    
+    list-style: none;
 }
-.clearfix::before, .clearfix::after {
+
+.clearfix::before,
+.clearfix::after {
     content: "";
     clear: both;
     display: block;
 }
+
 .hidden {
     display: none;
 }
-body {  
+.unvisible{
+    animation: hide .2s forwards;
+}
+@keyframes hide {
+    0%{
+        opacity: 1;
+        z-index: 10;        
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+body {
     min-height: 100vh;
-    background: url("https://github.com/lapuger/Chrome-App/blob/master/src/images/dkbg01.jpg") no-repeat;
+    background: url("file:///C:/Users/admin/Documents/STUDY/src/images/Tatooin_BG.svg") no-repeat;
     background-size: cover;
     font-family: 'poppins', 'Nanum Barun Gothic', sans-serif;
-    font-size: 1.6rem; /* reset 10*1.6px, to make sure you do not get any 10px around */
+    font-size: 1.6rem;
+    color: #fff;
+    /* reset 10*1.6px, to make sure you do not get any 10px around */
     text-align: center;
+    position: relative;
 }
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src:format("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-    unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
 
-}
 @font-face {
     font-family: 'poppins';
     font-style: normal;
     font-weight: 300;
-    src:format("https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css");
-
-    unicode-range:U+AC00-U+D7A3;
-
+    src: format("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
+
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.36rem;
+    src: format("https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css");
+    unicode-range: U+AC00-U+D7A3;
+}
+
+
+/* Lay-out */
 #wrapper {
     position: relative;
     min-height: 100vh;
 }
-#wrapper #dp-center {    
+
+#wrapper.login {
+filter:blur(30px);
+backdrop-filter: blur(30px);
+
+}
+
+#login {
     position: absolute;
+    z-index: 5;
     left:50%;
-    top:30rem;
-    margin-left:-25rem;
-    
+    margin-left:-35rem;
+    top:31rem; 
+    text-align: right; 
 }
-#wrapper #dp-center .clock {    
-    opacity: 0.6;     
+#login h1 {
+    font-size: 7rem;
+    font-weight: 300;
+}
+#login label {
+    font-size:4rem;
+    font-weight:200;
+}
+#login input#asking-name {
+    width: 40rem;
+    height: 4rem;
+    line-height: 4rem;
+    font-size:4rem;
+    color:#fff;
+    background: transparent;
+    border:0 solid white;
+    border-bottom: 1px solid #fff;
+    background: url(file:///C:/Users/admin/Documents/STUDY/src/images/next.svg) no-repeat;
+    background-position: 35.8rem 0.4rem;
+}
+input:focus {
+    outline: none;
+}
+
+#modal {
+    width:100%;
+    min-height: 100vh;
+    background: rgba(220,127,161,0.15);
+    position: absolute;
+    z-index: 2;
+}
+
+/* quote */
+.quote {
+    width: 100%;
+    min-height: 3.6rem;
+    line-height: 3.6rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+    background: linear-gradient(0.25turn, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));   
+}
+
+/* center .clock .greetings .dock */
+
+/* .clock */
+#wrapper .clock {
+    opacity: 0.7;
     width: 58rem;
-    position: relative;    
+    position: absolute;
+    left: 50%;
+    top: 20rem;
+    margin-left: -30rem;
 }
-#wrapper #dp-center .clock h2 {
-    font-size: 13rem;
+
+#wrapper .clock h2 {
+    font-size: 14rem;
     font-weight: 400;
     color: #fff;
     text-align: left;
+    margin-left: 3rem;
 }
-#wrapper #dp-center .clock .clock-setting { 
-    position:absolute;
-    right:0;
-    bottom:7rem;
-}
-/*
-#wrapper #dp-center .clock .clock-setting:hover {
-    background-image: url("/src/images/clock_setting_hover.svg");
-    color:tomato;
-}*/
 
-#wrapper #dp-center .clock:hover {
+#wrapper .clock .clock-setting {
+    position: absolute;
+    right: -5rem;
+    bottom: 7rem;
+}
+
+#wrapper .clock:hover {
     cursor: pointer;
 }
 
-#wrapper #dp-center .greetings {
-    margin-left: -7rem;    
+
+/* .greetings */
+#wrapper .greetings {
+    margin: 0 auto;
+    margin-top:40rem;
 }
-#wrapper #dp-center .greetings h1 {
-    margin-top: 5rem;
-    font-size: 4rem;
-    font-weight: 400;
+
+#wrapper .greetings h1 {
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 300;
     color: #fff;
 }
 
+/* .dock */
 #wrapper .dock {
     position: absolute;
-    bottom:2.5rem;
-    left:50%;
-    margin-left:-10.5rem;
-    background: rgba(0,0,0,0.5);
+    bottom: 2.5rem;
+    left: 50%;
+    margin-left: -10.5rem;
+    background: rgba(0, 0, 0, 0.5);
     width: 21rem;
     line-height: 6rem;
     border-radius: 1.4rem;
 }
+
 #wrapper .dock img {
     float: left;
     padding: 1rem 0.5rem;
     opacity: 0.6;
+    transition: all 0.3s ease-in-out;
 }
+
 #wrapper .dock img:first-child {
     margin-left: 0.5rem;
+}
+
+#wrapper .to-do-shortcut {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    opacity: 0.6;
+}
+
+#wrapper .now-playing {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    opacity: 0.6;
 }

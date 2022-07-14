@@ -1,4 +1,4 @@
-const time = document.querySelector("#wrapper #dp-center .clock");
+const time = document.querySelector("#wrapper .clock");
 
 function handlerMouseEnter() {
     time.style.opacity = 1;
@@ -13,7 +13,3 @@ function handlerMouseLeave() {
 
 time.addEventListener("mouseenter", handlerMouseEnter);
 time.addEventListener("mouseleave", handlerMouseLeave);
-
-
-
-

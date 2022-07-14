@@ -17,22 +17,39 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <div class="quote"></div>
-        
-        <div id="dp-center">
-            <div class="weather"></div>
+    <div id="login"> <!--나중에 hidden class 줄 것!-->
+        <form class="clearfix">
+            <h1>What is your name?</h1>
+            <label for="asking-name">My name is </label>
+            <input id="asking-name" type="text">            
+        </form>
+    </div>
+    <div id="modal"></div>
+    <div class="login" id="wrapper">
+        <!--처음 시작화면에 login 적용-->  
 
-            <div class="clock">
-                <h2><!--clock.js--></h2>
-                <img class="clock-setting hidden" src="src/images/clock_setting.svg" alt="">
-                
-            </div>
 
-            <div class="greetings"><h1>Good evening, Bo Young.</h1></div>
+        <div class="quote">“ Rebellions are built on hope. ”</div>
 
-            <div class="to-do-list"></div>
+
+        <div class="weather"></div>
+
+        <div class="clock">
+            <h2>
+                <!--clock.js-->
+            </h2>
+            <img class="clock-setting hidden" src="src/images/clock_setting.svg" alt="clock setting button">
+
         </div>
+
+        <div class="greetings">
+            <h1>May the force be with you,
+                <span class="username"></span>
+            </h1>
+        </div>
+
+        <div class="to-do-list"></div>
+
 
         <div class="dock clearfix">
             <img class="sound-app" src="src/images/sound_icon.svg" alt="sound menu icon">
@@ -40,16 +57,20 @@
             <img class="mini-game-app" src="src/images/mini-game_icon.svg" alt="mini-game menu icon">
             <img class="to-do-app" src="src/images/to-do_icon.svg" alt="to-do menu icon">
         </div>
-        <div class="music"></div>
-        <div class="to-do-shortcut"></div>
+        <a href="#"><img class="now-playing" src="src/images/sound.svg" alt="now-playing"></a>
+        <a href="#"><img class="to-do-shortcut" src="src/images/To-do-List_hover.svg" alt="to-do-shortcut"></a>
         <div class="to-do"></div>
         <span></span>
     </div>
 
 
-    <script src="src/clock.js"></script>
+    
     <script src="src/hover.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/greetings.js"></script>
     <script src="src/dock.js"></script>
+    <script src="src/to-do-list.js"></script>
+    <script src="src/now-playing.js"></script>
 </body>
 
 </html>

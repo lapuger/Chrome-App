@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Hello</title>
+    <link rel="stylesheet" href="src/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css'
+        rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="quote"></div>
+        
+        <div id="dp-center">
+            <div class="weather"></div>
+
+            <div class="clock">
+                <h2><!--clock.js--></h2>
+                <img class="clock-setting hidden" src="src/images/clock_setting.svg" alt="">
+                
+            </div>
+
+            <div class="greetings"><h1>Good evening, Bo Young.</h1></div>
+
+            <div class="to-do-list"></div>
+        </div>
+
+        <div class="dock clearfix">
+            <img class="sound-app" src="src/images/sound_icon.svg" alt="sound menu icon">
+            <img class="calculator-app" src="src/images/calculator_icon.svg" alt="calculator menu icon">
+            <img class="mini-game-app" src="src/images/mini-game_icon.svg" alt="mini-game menu icon">
+            <img class="to-do-app" src="src/images/to-do_icon.svg" alt="to-do menu icon">
+        </div>
+        <div class="music"></div>
+        <div class="to-do-shortcut"></div>
+        <div class="to-do"></div>
+        <span></span>
+    </div>
+
+
+    <script src="src/clock.js"></script>
+    <script src="src/hover.js"></script>
+    <script src="src/dock.js"></script>
+</body>
+
+</html>
