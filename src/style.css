@@ -105,7 +105,7 @@ backdrop-filter: blur(30px);
     background: transparent;
     border:0 solid white;
     border-bottom: 1px solid #fff;
-    background: url(file:///C:/Users/admin/Documents/STUDY/src/images/next.svg) no-repeat;
+    background: url(https://raw.githubusercontent.com/lapuger/Chrome-App/85d1a964cd06a83bed6e73e58432c9b0ad86eddf/src/images/next.svg) no-repeat;
     background-position: 35.8rem 0.4rem;
 }
 input:focus {
