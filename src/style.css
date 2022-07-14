@@ -40,7 +40,7 @@ html {
 
 body {
     min-height: 100vh;
-    background: url("file:///C:/Users/admin/Documents/STUDY/src/images/Tatooin_BG.svg") no-repeat;
+    background: url("https://raw.githubusercontent.com/lapuger/Chrome-App/a828d24f7034b06091dca963d2d9d3b86788097d/src/images/Tatooin_BG.svg") no-repeat;
     background-size: cover;
     font-family: 'poppins', 'Nanum Barun Gothic', sans-serif;
     font-size: 1.6rem;
