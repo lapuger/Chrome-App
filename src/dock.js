@@ -5,38 +5,38 @@ const toDoApp = document.querySelector("#wrapper .dock .to-do-app");
 
 const handlerDockMouseEnter = {    
     sound: function () {
-        soundApp.src = "file:///C:/Users/admin/Documents/STUDY/src/images/sound_icon_hover.svg"; 
+        soundApp.src = "https://github.com/lapuger/Chrome-App/blob/master/src/images/sound_icon_hover.svg"; 
         this.style.opacity = "1";           
     },
     calculator: function () {
-        calculatorApp.src = "file:///C:/Users/admin/Documents/STUDY/src/images/calculator_icon_hover.svg";
+        calculatorApp.src = "https://github.com/lapuger/Chrome-App/blob/master/src/images/calculator_icon_hover.svg";
         this.style.opacity = "1";
     },
     miniGame: function () {
-        miniGameApp.src = "file:///C:/Users/admin/Documents/STUDY/src/images/mini-game_icon_hover.svg";
+        miniGameApp.src = "https://github.com/lapuger/Chrome-App/blob/master/src/images/mini-game_icon_hover.svg";
         this.style.opacity = "1";
     },
     toDo: function () {
-        toDoApp.src = "file:///C:/Users/admin/Documents/STUDY/src/images/to-do_icon_hover.svg";
+        toDoApp.src = "https://github.com/lapuger/Chrome-App/blob/master/src/images/to-do_icon_hover.svg";
         this.style.opacity = "1";
     }
 };
 
 const handlerDockMouseLeave = {
     sound: function () {
-        soundApp.src = "file:///C:/Users/admin/Documents/STUDY/src/images/sound_icon.svg";
+        soundApp.src = "https://github.com/lapuger/Chrome-App/blob/master/src/images/sound_icon.svg";
         this.style.opacity = "0.6";
     },
     calculator: function () {
-        calculatorApp.src = "file:///C:/Users/admin/Documents/STUDY/src/images/calculator_icon.svg";
+        calculatorApp.src = "https://github.com/lapuger/Chrome-App/blob/master/src/images/calculator_icon.svg";
         this.style.opacity = "0.6";
     },
     miniGame: function () {
-        miniGameApp.src = "file:///C:/Users/admin/Documents/STUDY/src/images/mini-game_icon.svg";
+        miniGameApp.src = "https://github.com/lapuger/Chrome-App/blob/master/src/images/mini-game_icon.svg";
         this.style.opacity = "0.6";
     },
     toDo: function () {
-        toDoApp.src = "file:///C:/Users/admin/Documents/STUDY/src/images/to-do_icon.svg";
+        toDoApp.src = "https://github.com/lapuger/Chrome-App/blob/master/src/images/to-do_icon.svg";
         this.style.opacity = "0.6";
     }
 };
