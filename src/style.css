@@ -43,33 +43,16 @@ html {
 
 body {
     min-height: 100vh;
-    background: url("https://raw.githubusercontent.com/lapuger/Chrome-App/7afbed5ea13f00a05c910ebf12e8ba5afe9ca97e/src/images/Tatooin_BG.svg") no-repeat;
+    background: url("https://raw.githubusercontent.com/lapuger/Chrome-App/31db1629ee3d90c6b94847306edd3fc6e620767d/src/images/Tatooin_BG.svg") no-repeat;
     background-size: cover;
-    font-family: 'poppins', 'Nanum Barun Gothic', sans-serif;
+    font-weight: 300;
+    font-family:'poppins',  sans-serif;
     font-size: 1.6rem;
     color: #fff;
     /* reset 10*1.6px, to make sure you do not get any 10px around */
     text-align: center;
     position: relative;
 }
-
-@font-face {
-    font-family: 'poppins';
-    font-style: normal;
-    font-weight: 300;
-    src: format("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
-}
-
-@font-face {
-    font-family: 'Nanum Barun Gothic';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.36rem;
-    src: format("https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css");
-    unicode-range: U+AC00-U+D7A3;
-}
-
 
 /* Lay-out */
 #wrapper {
@@ -80,7 +63,6 @@ body {
 #wrapper.login {
     filter: blur(30px);
     backdrop-filter: blur(30px);
-
 }
 
 #login {
@@ -88,7 +70,7 @@ body {
     z-index: 5;
     left: 50%;
     margin-left: -35rem;
-    top: 31rem;
+    top: 25rem;
     text-align: right;
 }
 
@@ -99,7 +81,7 @@ body {
 
 #login label {
     font-size: 4rem;
-    font-weight: 200;
+
 }
 
 #login input#asking-name {
@@ -109,14 +91,27 @@ body {
     font-size: 4rem;
     color: #fff;
     background: transparent;
-    border: 0 solid white;
-    border-bottom: 1px solid #fff;
-    background: url(file:///C:/Users/admin/Documents/STUDY/src/images/next.svg) no-repeat;
-    background-position: 35.8rem 0.4rem;
+    border: 0 solid white;    
 }
-
 input:focus {
     outline: none;
+}
+#login form {
+    position: relative;
+}
+#login button {
+    background: transparent;
+    border:0 solid #fff;
+    position: absolute;
+    right:0;
+    bottom:1.2rem;
+}
+#login hr {
+    position: absolute;
+    bottom:0.7rem;
+    right:0;
+    width: 40.5rem;
+    border-bottom: 0.1px solid #fff;
 }
 
 #modal {
