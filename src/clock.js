@@ -19,17 +19,17 @@ setInterval(getClock, 1000);
 const setting = document.querySelector("#wrapper .clock .clock-setting");
 
 function handlerMouseEnter() {
-    setting.src = "https://github.com/lapuger/Chrome-App/blob/master/src/images/clock_setting_hover.svg";
+    setting.src = "https://raw.githubusercontent.com/lapuger/Chrome-App/213ff40399f525f2facf11c10e67b9cff0f77455/src/images/clock_setting_hover.svg";
 };
 function handlerMouseLeave() {
-    setting.src = "https://github.com/lapuger/Chrome-App/blob/master/src/images/clock_setting.svg";
+    setting.src = "https://raw.githubusercontent.com/lapuger/Chrome-App/213ff40399f525f2facf11c10e67b9cff0f77455/src/images/clock_setting.svg";
 };
 setting.addEventListener("mouseenter", handlerMouseEnter);
 setting.addEventListener("mouseleave", handlerMouseLeave);
 
 
 function handlerClicked() {
-    setting.src = "https://github.com/lapuger/Chrome-App/blob/master/src/images/clock_setting_clicked.svg";
+    setting.src = "https://raw.githubusercontent.com/lapuger/Chrome-App/213ff40399f525f2facf11c10e67b9cff0f77455/src/images/clock_setting_clicked.svg";
 };
 setting.addEventListener("click", handlerClicked);
 // clock setting
