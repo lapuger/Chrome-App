@@ -42,11 +42,15 @@ html {
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
     background: url("https://raw.githubusercontent.com/lapuger/Chrome-App/31db1629ee3d90c6b94847306edd3fc6e620767d/src/images/Tatooin_BG.svg") no-repeat;
     background-size: cover;
     font-weight: 300;
-    font-family:'poppins',  sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: 1.6rem;
     color: #fff;
     /* reset 10*1.6px, to make sure you do not get any 10px around */
@@ -57,7 +61,7 @@ body {
 /* Lay-out */
 #wrapper {
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 #wrapper.login {
@@ -86,30 +90,35 @@ body {
 
 #login input#asking-name {
     width: 40rem;
-    height: 4rem;
+    height: 5rem;
     line-height: 4rem;
     font-size: 4rem;
     color: #fff;
     background: transparent;
-    border: 0 solid white;    
+    border: 0 solid white;
 }
+
 input:focus {
     outline: none;
 }
+
 #login form {
     position: relative;
 }
+
 #login button {
     background: transparent;
-    border:0 solid #fff;
+    border: 0 solid #fff;
     position: absolute;
-    right:0;
-    bottom:1.2rem;
+    right: 0;
+    bottom: 1rem;
+    opacity: 0.6;
 }
+
 #login hr {
     position: absolute;
-    bottom:0.7rem;
-    right:0;
+    bottom: 0;
+    right: 0;
     width: 40.5rem;
     border-bottom: 0.1px solid #fff;
 }
@@ -123,13 +132,18 @@ input:focus {
 }
 
 /* quote */
-.quote {
+.quotes {
     width: 100%;
     min-height: 3.6rem;
     line-height: 3.6rem;
     font-size: 1.5rem;
     font-weight: 200;
     background: linear-gradient(0.25turn, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));
+}
+
+.quotes #author {
+    margin-left: 2rem;
+    font-size: 1.3rem;
 }
 
 /* center .clock .greetings .dock */
@@ -140,7 +154,7 @@ input:focus {
     width: 58rem;
     position: absolute;
     left: 50%;
-    top: 20rem;
+    top: 30rem;
     margin-left: -30rem;
 }
 
@@ -171,7 +185,7 @@ input:focus {
 
 #wrapper .clock .clock-setting {
     position: absolute;
-    right: -5rem;
+    right: -6rem;
     bottom: 7rem;
 }
 
@@ -183,7 +197,7 @@ input:focus {
 /* .greetings */
 #wrapper .greetings {
     margin: 0 auto;
-    margin-top: 40rem;
+    margin-top: 50rem;
 }
 
 #wrapper .greetings h1 {
