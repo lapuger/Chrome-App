@@ -3,7 +3,7 @@ function handlerBgChange() {
 
     const now = new Date().getHours();    
     if ( 6 <= now && now <= 17 ) {
-        document.body.style.backgroundImage = "url(file:///C:/Users/admin/Documents/STUDY/chalange_10/src/images/0.svg)";
+        document.body.style.backgroundImage = "url(https://raw.githubusercontent.com/lapuger/Chrome-App/28866903ba377b7f7b391beccd80a0ef52ec4b8a/src/images/0.svg)";
         document.body.style.color = "#000";        
         document.querySelector("#wrapper .clock h2").style.color = "#000";
         document.querySelector(".quotes").style.fontWeight = "400";
@@ -15,7 +15,7 @@ function handlerBgChange() {
         document.querySelector("#to-do-form hr").style.borderBottom = "1px solid #000";
 
     } else {
-        document.body.style.backgroundImage = "url(file:///C:/Users/admin/Documents/STUDY/chalange_10/src/images/1.svg)";
+        document.body.style.backgroundImage = "url(https://raw.githubusercontent.com/lapuger/Chrome-App/28866903ba377b7f7b391beccd80a0ef52ec4b8a/src/images/1.svg)";
         document.body.style.color = "#fff";
         document.querySelector("#login h1").style.color = "#fff";
         document.querySelector("#wrapper .clock").classList.add("light");
