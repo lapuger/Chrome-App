@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+
+#to-do-all {
+    position: absolute;
+    right:1.5rem;
+    bottom:1.5rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.25);
+    border-radius: 1rem;
+    z-index: 10;
+    width: 36rem;
+    height: 50rem;
+    background: rgba(255,255,255,0.9);
+    color:#000;
+}

@@ -41,6 +41,16 @@ const handlerDockMouseLeave = {
     }
 };
 
+const handlerDockClick = {
+    miniGame: function() {       
+        document.getElementById("mini-game").classList.remove("hidden");
+    }
+    /*sound: function() {
+        const span = document.createElement("span");
+        document.querySelector(".sound-app").appendChild(span);
+    }*/
+}
+
 soundApp.addEventListener("mouseenter", handlerDockMouseEnter.sound);
 calculatorApp.addEventListener("mouseenter", handlerDockMouseEnter.calculator);
 miniGameApp.addEventListener("mouseenter", handlerDockMouseEnter.miniGame);
@@ -50,4 +60,6 @@ soundApp.addEventListener("mouseleave", handlerDockMouseLeave.sound);
 calculatorApp.addEventListener("mouseleave", handlerDockMouseLeave.calculator);
 miniGameApp.addEventListener("mouseleave", handlerDockMouseLeave.miniGame);
 toDoApp.addEventListener("mouseleave", handlerDockMouseLeave.toDo);
+
+miniGameApp.addEventListener("click", handlerDockClick.miniGame);
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Hello</title>
+    <title>Rogue Three</title>
     <link rel="stylesheet" href="src/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,10 +13,12 @@
         rel="stylesheet">
     <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css'
         rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="src/mini-game.css">
+    <link rel="stylesheet" href="src/to-do-all.css">
 
 </head>
 
-<body>
+<body>    
     <div id="login">
         <form>
             <h1>What is your name?</h1>
@@ -27,24 +29,23 @@
     </div>
     <div id="modal"></div>
     <div class="login" id="wrapper">
-        <!--처음 시작화면에 login 적용-->  
+
 
 
         <div class="quotes">
-            <span id="quote"></span>
-            
+            &quot;&nbsp;<span id="quote"></span>&nbsp;&quot;
             <span id="author"></span>
         </div>
 
 
-        <div class="weather"></div>
+        <div class="weather">
+            <span></span>
+            <br />
+            <span></span>
+        </div>
 
         <div class="clock">
-            <h2>
-                <!--clock.js-->
-            </h2>
-            <img class="clock-setting hidden" src="src/images/clock_setting.svg" alt="clock setting button">
-
+            <h2><!--clock.js--></h2>      
         </div>
 
         <div class="greetings">
@@ -53,30 +54,70 @@
             </h1>
         </div>
 
-        <div class="to-do-list"></div>
+        <form id="to-do-form">
+            <input type="text" placeholder="Write a To Do and Press Enter.">
+            <hr />
+        </form>
+        <ul id="to-do-list"></ul>
 
 
         <div class="dock clearfix">
             <img class="sound-app" src="src/images/sound_icon.svg" alt="sound menu icon">
-            <img class="calculator-app" src="src/images/calculator_icon.svg" alt="calculator menu icon">
+            <!--<img class="calculator-app" src="src/images/calculator_icon.svg" alt="calculator menu icon">-->
             <img class="mini-game-app" src="src/images/mini-game_icon.svg" alt="mini-game menu icon">
-            <img class="to-do-app" src="src/images/to-do_icon.svg" alt="to-do menu icon">
+            <!--<img class="to-do-app" src="src/images/to-do_icon.svg" alt="to-do menu icon">-->
         </div>
-        <a href="#"><img class="now-playing" src="src/images/sound.svg" alt="now-playing"></a>
-        <a href="#"><img class="to-do-shortcut" src="src/images/To-do-List_hover.svg" alt="to-do-shortcut"></a>
-        <div class="to-do"></div>
-        <span></span>
+        <a href="#" class="now-playing hidden"><img src="src/images/sound.svg" alt="now-playing"><span>Jyn Erso & Hope Suite  —Rogue One: A Star Wars Story</span></a>
+        <!--<a href="#"><img class="to-do-shortcut" src="src/images/To-do-List_hover.svg" alt="to-do-shortcut"></a>-->
+
     </div>
 
+    <div class="hidden" id="mini-game">
+        <form class="close">
+            <button>X</button>
+        </form>
+        <div id="mini-game-wrapper">
+            
+            <h1>Random Number Game</h1>
+    
+            <form class="generate">
+                <h2>
+                    <label id="max-number-label" for="max-number">Generate a number between 0 and</label>
+                    <input id="max-number" type="number" />
+                </h2>
+    
+                <h3>
+                    <label id="guess-number-label" for="max-number">Guess the number:</label>
+                    <input id="guess-number" type="number" />
+                    <button>Play!</button>
+                </h3>
+    
+                <p class="hidden" id="chosen">
+                    <span id="user"></span>
+                    <span id="machine"></span>
+                </p>
+                <h3 id="result"></h3>                
+            </form>
+            <span class="hidden" id="finish">Finish</span>
+        </div>
+    </div>
+
+    <div class="hidden" id="to-do-all">
+        
+    </div>
+
+    <audio id="player" src="src/sound.mp3"></audio>
 
     
-    <script src="src/hover.js"></script>
+    
     <script src="src/quotes.js"></script>
     <script src="src/clock.js"></script>
     <script src="src/greetings.js"></script>
-    <script src="src/dock.js"></script>
     <script src="src/to-do-list.js"></script>
+    <script src="src/index.js"></script>
+    <script src="src/mini-game.js"></script>
     <script src="src/now-playing.js"></script>
+    <script src="src/weather.js"></script>
 </body>
 
 </html>

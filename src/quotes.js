@@ -1,7 +1,7 @@
 const quotes = [
     {
         quote:"Rebellions are built on hope.",
-        author: "—Jyn, Rogue One",                    
+        author: "—Jyn, Rogue One: A Star Wars Story",                    
     },
     {
         quote:"The ability to speak does not make you intelligent.",
@@ -26,7 +26,31 @@ const quotes = [
     {
         quote:"We’ll always be with you. No one’s ever really gone. A thousand generations live in you now.",
         author:"—Luke Skywalker, Star Wars Episode IX: The Rise of Skywalker",
-    }
+    },
+    {
+        quote:"I like firsts. Good or bad, they’re always memorable.",
+        author:"—Ahsoka Tano, The Mandalorian",
+    },
+    {
+        quote:"Great, kid, don’t get cocky.",
+        author:"—Han Solo, A New Hope",
+    },
+    {
+        quote:"Congratulations. You are being rescued.",
+        author:"—K-2SO, Rogue One: A Star Wars Story",
+    },
+    {
+        quote:"I’m a Mandalorian. Weapons are part of my religion.",
+        author:"—Mando, The Mandalorian",
+    },
+    {
+        quote:"Once you start down the dark path, forever will it dominate your destiny.",
+        author:"—Yoda, The Empire Strikes Back",
+    },
+    {
+        quote:"Fear leads to anger, anger leads to hate, hate leads to suffering.",
+        author:"—Yoda, The Phantom Menace",
+    },
 ];
 
 const quote = document.querySelector(".quotes span:first-child");
