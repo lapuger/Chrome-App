@@ -5,10 +5,6 @@ const UNVISIBLE = "unvisible";
 const HIDDEN = "hidden"
 
 
-
-
-
-
 const usernameKey = localStorage.getItem("username");
 
 if (usernameKey === null) {
